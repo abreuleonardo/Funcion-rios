@@ -1,0 +1,105 @@
+package aula2303;
+
+public class FuncEmpresa {
+        private int matricula;
+        private String nome;
+        private int idade;
+        private String cargo;
+        private double salario;
+
+        // Método construtor sem parâmetros
+        public FuncEmpresa() {
+            this.salario = 1500.00;
+        }
+
+        // Método construtor que recebe nome e idade
+        public FuncEmpresa(String nome, int idade) {
+            this.nome = nome;
+            this.idade = idade;
+            this.salario = 1500.00;
+        }
+
+        // Método construtor que recebe matrícula, nome e salário
+        public FuncEmpresa(int matricula, String nome, double salario) {
+            this.matricula = matricula;
+            this.nome = nome;
+            this.salario = salario;
+        }
+
+        // Métodos getters e setters
+        public int getMatricula() {
+            return matricula;
+        }
+
+        public void setMatricula(int matricula) {
+            this.matricula = matricula;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public void setNome(String nome) {
+            this.nome = nome;
+        }
+
+        public int getIdade() {
+            return idade;
+        }
+
+        public void setIdade(int idade) {
+            this.idade = idade;
+        }
+
+        public String getCargo() {
+            return cargo;
+        }
+
+        public void setCargo(String cargo) {
+            this.cargo = cargo;
+        }
+
+        public double getSalario() {
+            return salario;
+        }
+
+        public void setSalario(double salario) {
+            this.salario = salario;
+        }
+    }
+}
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+
+package aula2303;
+
+public class FuncEmpresa {
+    private int matricula;
+    private String nome;
+    private int idade;
+    private String cargo;
+    private double salario;
+
+    // Métodos construtores e getters/setters omitidos para fins de simplicidade
+    
+    public static void main(String[] args) {
+        // Criando uma instância da classe FuncEmpresa
+        FuncEmpresa funcionario = new FuncEmpresa("João", 30);
+
+        // Atribuindo valores aos atributos da instância
+        funcionario.setMatricula(123);
+        funcionario.setCargo("Analista");
+
+        // Exibindo informações do funcionário
+        System.out.println("Matrícula: " + funcionario.getMatricula());
+        System.out.println("Nome: " + funcionario.getNome());
+        System.out.println("Idade: " + funcionario.getIdade());
+        System.out.println("Cargo: " + funcionario.getCargo());
+        System.out.println("Salário: " + funcionario.getSalario());
+    }
+}
